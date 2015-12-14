@@ -14,7 +14,7 @@ module.exports = function (api) {
   }
 
   api.vouchers.get = function (voucher_ref, cb) {
-    var data = { url: '/3/vouchers/sublist/'+voucher_ref.VoucherSeries+'/'+voucher_ref.VoucherNumber, qs: {financialyear: voucher_ref.Year}};
+    var data = { url: '/3/vouchers/'+voucher_ref.VoucherSeries+'/'+voucher_ref.VoucherNumber, qs: {financialyear: voucher_ref.Year}};
     api.send.get(data, function (err, r, body) {
       if(err) return cb(err);
       cb(null, body);
