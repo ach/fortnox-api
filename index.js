@@ -20,5 +20,6 @@ function Fortnox(config) {
   require('./api/send')(this);
   require('./api/orders')(this);
   require('./api/articles')(this);
+  require('./api/vouchers')(this);
 }
 
