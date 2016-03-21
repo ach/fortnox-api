@@ -23,5 +23,6 @@ function Fortnox(config) {
   require('./api/vouchers')(this);
   require('./api/settings')(this);
   require('./api/financialYear')(this);
+  require('./api/voucherSeries')(this);
 }
 
