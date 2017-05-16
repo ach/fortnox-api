@@ -24,5 +24,5 @@ function Fortnox(config) {
   require('./api/settings')(this);
   require('./api/financialYear')(this);
   require('./api/voucherSeries')(this);
+  require('./api/accounts')(this);
 }
-
